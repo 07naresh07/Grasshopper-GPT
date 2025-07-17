@@ -1,0 +1,15 @@
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\src\bin\Debug\net7.0-windows\Grasshopper_GPT.deps.json
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\src\bin\Debug\net7.0-windows\Grasshopper_GPT.runtimeconfig.json
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\src\bin\Debug\net7.0-windows\Grasshopper_GPT.gha
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\src\bin\Debug\net7.0-windows\Grasshopper_GPT.pdb
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\src\obj\Debug\net7.0-windows\Grasshopper_GPT.csproj.AssemblyReference.cache
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\src\obj\Debug\net7.0-windows\Grasshopper_GPT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\src\obj\Debug\net7.0-windows\Grasshopper_GPT.AssemblyInfoInputs.cache
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\src\obj\Debug\net7.0-windows\Grasshopper_GPT.AssemblyInfo.cs
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\src\obj\Debug\net7.0-windows\Grasshopper_GPT.csproj.CoreCompileInputs.cache
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\src\obj\Debug\net7.0-windows\Grasshopper_GPT.sourcelink.json
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\src\obj\Debug\net7.0-windows\Grasshopper_GPT.gha
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\src\obj\Debug\net7.0-windows\refint\Grasshopper_GPT.gha
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\src\obj\Debug\net7.0-windows\Grasshopper_GPT.pdb
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\src\obj\Debug\net7.0-windows\Grasshopper_GPT.genruntimeconfig.cache
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\src\obj\Debug\net7.0-windows\ref\Grasshopper_GPT.gha

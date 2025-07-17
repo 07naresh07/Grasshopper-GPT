@@ -1,0 +1,6 @@
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\Grasshopper_GPT\obj\Debug\net7.0\Grasshopper_GPT.csproj.AssemblyReference.cache
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\Grasshopper_GPT\obj\Debug\net7.0\Grasshopper_GPT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\Grasshopper_GPT\obj\Debug\net7.0\Grasshopper_GPT.AssemblyInfoInputs.cache
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\Grasshopper_GPT\obj\Debug\net7.0\Grasshopper_GPT.AssemblyInfo.cs
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\Grasshopper_GPT\obj\Debug\net7.0\Grasshopper_GPT.csproj.CoreCompileInputs.cache
+C:\Users\ndham\OneDrive\Desktop\Grasshopper-GPT\Grasshopper_GPT\obj\Debug\net7.0\Grasshopper_GPT.sourcelink.json

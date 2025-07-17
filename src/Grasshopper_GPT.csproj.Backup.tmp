@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Target both .NET 7 (for Rhino 8) and .NET Framework 4.8 (for Rhino 6/7) -->
+    <TargetFrameworks>net7.0-windows;net48</TargetFrameworks>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <TargetExt>.gha</TargetExt>
+    <NoWarn>NU1701</NoWarn>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- Plugin Info -->
+    <Version>1.0</Version>
+    <Title>Grasshopper_GPT</Title>
+    <Company>Grasshopper_GPT Authors</Company>
+    <Description>Description of Grasshopper_GPT</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Grasshopper and Rhino references for Windows -->
+    <Reference Include="GH_Util">
+      <HintPath>..\..\..\..\..\..\Program Files\Rhino 8\Plug-ins\Grasshopper\GH_Util.dll</HintPath>
+    </Reference>
+    <Reference Include="RhinoCommon">
+      <HintPath>C:\Program Files\Rhino 8\System\RhinoCommon.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Grasshopper">
+      <HintPath>C:\Program Files\Rhino 8\System\Grasshopper.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="GH_IO">
+      <HintPath>C:\Program Files\Rhino 8\System\GH_IO.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- System.Drawing for Bitmap icons -->
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+  </ItemGroup>
+
+  <!-- Optional: Auto-copy to Grasshopper Libraries folder -->
+  <Target Name="CopyToGrasshopper" AfterTargets="Build">
+    <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="%AppData%\Grasshopper\Libraries" />
+  </Target>
+
+</Project>
