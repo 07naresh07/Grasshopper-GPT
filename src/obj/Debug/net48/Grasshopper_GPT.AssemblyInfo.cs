@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Description of MyFirstPlugin")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+54e15b6d26818db41a63fb992f92df31c990e13f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ec4bec46aad86f054a1b828c9429a087323441f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Grasshopper_GPT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Grasshopper_GPT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
