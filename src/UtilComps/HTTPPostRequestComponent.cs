@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Text;
 using Grasshopper.Kernel;
@@ -64,19 +65,19 @@ namespace Grasshopper_GPT.UtilComps
 
             // Retrieve input parameters
             DA.GetData("Send", ref active);
-            if(!active)
+            if (!active)
             {
                 DA.SetData("Response", "");
                 return; // If not active, do nothing
             }
             if (!DA.GetData("URL", ref url)) return;
             if (!DA.GetData("Body", ref body)) return;
-            if(!DA.GetData("Content Type", ref contentType)) return;
+            if (!DA.GetData("Content Type", ref contentType)) return;
             DA.GetData("Authorization", ref authToken);
-            if(!DA.GetData("Timeout", ref timeout)) return;
+            if (!DA.GetData("Timeout", ref timeout)) return;
 
             // Validity checks
-            if(url==null || url.Length==0)
+            if (url == null || url.Length == 0)
             {
                 AddRuntimeMessage(GH_RuntimeMessageLevel.Error, "Empty URL");
                 return;
@@ -90,14 +91,14 @@ namespace Grasshopper_GPT.UtilComps
             }
             // Compose the request
             byte[] data = Encoding.ASCII.GetBytes(body);    // Convert body to byte array i.e. 0 and 1s
-            HttpWebRequest request = (HttpWebRequest) WebRequest.Create(url);
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "POST";  // Set the method to POST
             request.ContentType = contentType;  // Set the content type
             request.ContentLength = data.Length;  // Set the content length
             request.Timeout = timeout;  // Set the timeout
 
             // Handle authorization
-            if(authToken!=null && authToken.Length>0)
+            if (authToken != null && authToken.Length > 0)
             {
                 System.Net.ServicePointManager.Expect100Continue = true;
                 System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12; // Ensure TLS 1.2 is used
@@ -108,12 +109,28 @@ namespace Grasshopper_GPT.UtilComps
             {
                 request.Credentials = CredentialCache.DefaultCredentials;
             }
-
+            using (var stream = request.GetRequestStream())
+            {
+                stream.Write(data, 0, data.Length);  // Write the body data to the request stream
+            }
+            string response = "";
+            try
+            {
+                var res = request.GetResponse();  // Get the response from the server
+                var reader = new StreamReader(res.GetResponseStream());
+                response = reader.ReadToEnd();
+            }
+            catch (Exception ex)
+            {
+                AddRuntimeMessage(GH_RuntimeMessageLevel.Error, "Something went wrong: " + ex.Message);
+                return; // If an error occurs, exit the method
+            }
+            // Set the response output
+            DA.SetData(0, response);
         }
-
-        /// <summary>
-        /// Provides an Icon for the component.
-        /// </summary>
+            /// <summary>
+            /// Provides an Icon for the component.
+            /// </summary>
         protected override System.Drawing.Bitmap Icon
         {
             get

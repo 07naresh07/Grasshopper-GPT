@@ -30,9 +30,9 @@
               "Title": "HTTPPostRequestComponent.cs",
               "DocumentMoniker": "C:\\Users\\ndham\\OneDrive\\Desktop\\Grasshopper-GPT\\src\\UtilComps\\HTTPPostRequestComponent.cs",
               "RelativeDocumentMoniker": "UtilComps\\HTTPPostRequestComponent.cs",
-              "ToolTip": "C:\\Users\\ndham\\OneDrive\\Desktop\\Grasshopper-GPT\\src\\UtilComps\\HTTPPostRequestComponent.cs*",
-              "RelativeToolTip": "UtilComps\\HTTPPostRequestComponent.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAVAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ndham\\OneDrive\\Desktop\\Grasshopper-GPT\\src\\UtilComps\\HTTPPostRequestComponent.cs",
+              "RelativeToolTip": "UtilComps\\HTTPPostRequestComponent.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAAAG0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-17T00:32:27.634Z",
               "EditorCaption": ""
@@ -40,15 +40,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Grasshopper_GPT",
+              "Title": "Grasshopper_GPT.csproj",
               "DocumentMoniker": "C:\\Users\\ndham\\OneDrive\\Desktop\\Grasshopper-GPT\\src\\Grasshopper_GPT.csproj",
               "RelativeDocumentMoniker": "Grasshopper_GPT.csproj",
               "ToolTip": "C:\\Users\\ndham\\OneDrive\\Desktop\\Grasshopper-GPT\\src\\Grasshopper_GPT.csproj",
               "RelativeToolTip": "Grasshopper_GPT.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-17T00:31:12.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-17T00:31:12.038Z"
             },
             {
               "$type": "Document",
@@ -60,8 +59,7 @@
               "RelativeToolTip": "Grasshopper_GPTComponent.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T23:49:28.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T23:49:28.101Z"
             }
           ]
         }
